@@ -17,3 +17,6 @@ Dimension in `.env`.
 Slides are located in `rsc/slide`.
 
 Title page example provided.
+
+## Todo
+* include images in slides not in code

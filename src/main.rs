@@ -20,7 +20,12 @@ fn main()
     let face = lib.new_face("rsc/font/Arial.ttf", 0).unwrap();
     let mut font_reader = std::io::Cursor::new(include_bytes!("../rsc/font/Arial.ttf").as_ref());
 
-    let (doc, page1, layer1) = PdfDocument::new("PDF", Mm(width), Mm(height), "Layer 1");
+    let (mut doc, page1, layer1) = PdfDocument::new("PDF", Mm(width), Mm(height), "Layer 1");
+    doc = doc.with_conformance(PdfConformance::Custom(CustomPdfConformance {
+    	requires_icc_profile: false,
+    	requires_xmp_metadata: false,
+        .. Default::default()
+    }));
     let layer = doc.get_page(page1).get_layer(layer1);
     let font = doc.add_external_font(&mut font_reader).unwrap();
 

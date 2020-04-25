@@ -1,0 +1,2 @@
+cargo:rustc-cfg=std
+cargo:rustc-cfg=supports_non_exhaustive

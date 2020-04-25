@@ -11,7 +11,9 @@ xdg-open main.pdf
 `$ARG`: default(debug), release
 
 ## Usage
-# Slides
-Slides are located in `rsc/slide`.
-Title page example provided.
 Dimension in `.env`.
+
+### Slides
+Slides are located in `rsc/slide`.
+
+Title page example provided.

@@ -8,12 +8,13 @@ Build your own setup to quickly create your new presentations.
 xdg-open main.pdf
 ```
 
-## Usage
-# Slides
-Slides are located in rsc/slide.
-Title page example provided.
-
 ARG:
 <pre>
 <b>debug</b> release
 </pre>
+
+## Usage
+# Slides
+Slides are located in `rsc/slide`.
+Title page example provided.
+Dimension in `.env`.

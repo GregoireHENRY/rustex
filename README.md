@@ -1,4 +1,6 @@
-# RUST PDF LATEX-LIKE
+# rustex
+Create pdf and beamer presentation like in latex.
+Build your own setup to quickly create your new presentations.
 
 ## Build
 ```

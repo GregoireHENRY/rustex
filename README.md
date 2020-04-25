@@ -8,7 +8,7 @@ Build your own setup to quickly create your new presentations.
 xdg-open main.pdf
 ```
 
-$ARG-> default: debug, release
+`$ARG`: default(debug), release
 
 ## Usage
 # Slides

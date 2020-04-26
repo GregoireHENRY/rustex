@@ -10,7 +10,7 @@ xdg-open main.pdf
 `$ARG`: default(debug), release
 
 ## Usage
-`env` contains:
+`.env` contains:
 * dimensions in mm
 * font from `rsc/font/` (only Arial and RobotoMono-Regular currently set for centering [see `src/rustex.rs` `Doc.magicx`])
 

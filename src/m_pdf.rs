@@ -90,9 +90,8 @@ pub fn offset(layer: &PdfLayerReference, dx: f64, dy: f64)
     layer.set_text_cursor(Mm(dx), Mm(-dy));
 }
 
-pub fn readblock(layer: &mut layer::Layer, block: std::option::Option<&str>)
+pub fn readblock(layer: &mut layer::Layer, block: &str)
 {
-    let block = block.unwrap();
     let mut lines = block.split("\n").peekable();
     if vec!["\\text", "\\image"].contains(lines.peek().unwrap()) {
         layer.head = lines.next().unwrap().to_string();

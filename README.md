@@ -14,8 +14,7 @@ xdg-open main.pdf
 * dimensions in mm
 * font from `rsc/font/` (only Arial and RobotoMono-Regular currently set for centering [see `src/rustex.rs` `Doc.magicx`])
 
-### Slides
-Located in `rsc/slide/`. Title page example provided.
+Slides located in `rsc/slide/`. Title page example provided.
 
 ## Todo
 * header / footer

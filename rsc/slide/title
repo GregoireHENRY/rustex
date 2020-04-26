@@ -1,14 +1,50 @@
+\text
+\fill blue
+\offset 0.5W -0.8H
+\size 36
+\align mid-mid
+\between 0
 Asteroid Characterization using
 Radio-Science with a Cubesat:
 Simulations & Test Bench
 
+\size 18
+\offsety -14
 Work Session Summary III
 
+\fill black
+\size 22
+\offsety 25
 Gregoire Henry
 Supervisor: Boris Segret
 
+\size 16
 gregoire.henry@ipsa.fr & boris.segret@obspm.fr
 
 IPSA & OBSPM & CCERES & ESEP & BIRDY
 
+\image
+\offset 0.25W 0.2H
+\scale 0.3
+ipsa.jpg
+
+\offset 0.38W 0.2H
+\scale 0.6
+obspm.jpg
+
+\offset 0.5W 0.2H
+\scale 0.2
+birdy.jpg
+
+\offset 0.59W 0.2H
+\scale 1.15
+cceres.jpg
+
+\offset 0.71W 0.2H
+\scale 1.0
+esep.jpg
+
+\text
+\size 18
+\offsety 30
 April 21, 2020

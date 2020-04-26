@@ -5,6 +5,7 @@ extern crate image;
 mod toolbox;
 mod m_pdf;
 mod title;
+mod layer;
 
 use printpdf::*;
 use freetype::Library;
@@ -26,10 +27,11 @@ fn main()
     	requires_xmp_metadata: false,
         .. Default::default()
     }));
-    let layer = doc.get_page(page1).get_layer(layer1);
+    let mut _layer = doc.get_page(page1).get_layer(layer1);
     let font = doc.add_external_font(&mut font_reader).unwrap();
+    let mut layer = layer::Layer::new(&mut _layer, font, face, width, height);
 
-    title::create(&layer, &font, width, height, &face);
+    title::create(&mut layer);
 
     doc.save(&mut BufWriter::new(File::create("main.pdf").unwrap())).unwrap();
 }

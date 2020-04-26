@@ -1,10 +1,16 @@
 use std::env;
 use Vec;
     
+pub fn env_str(var: &str)
+-> String
+{
+    env::var(var).unwrap()
+}
+
 pub fn env_f64(var: &str)
 -> f64
 {
-    env::var(var).unwrap().parse().unwrap()
+    env_str(var).parse().unwrap()
 }
 
 pub fn charind(s: &str, i: usize)

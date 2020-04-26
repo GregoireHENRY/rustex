@@ -1,6 +1,5 @@
 # rustex
-Create pdf and beamer presentation like in latex.
-Build your own setup to quickly create your new presentations.
+Create pdf and beamer presentation like in latex. Build your own setup to quickly create your new presentations.
 
 ## Build
 ```
@@ -11,12 +10,12 @@ xdg-open main.pdf
 `$ARG`: default(debug), release
 
 ## Usage
-Dimension in `.env`.
+`env` contains:
+* dimensions in mm
+* font from `rsc/font/` (only Arial and RobotoMono-Regular currently set for centering [see `src/rustex.rs` `Doc.magicx`])
 
 ### Slides
-Slides are located in `rsc/slide`.
-
-Title page example provided.
+Located in `rsc/slide/`. Title page example provided.
 
 ## Todo
 * header / footer
